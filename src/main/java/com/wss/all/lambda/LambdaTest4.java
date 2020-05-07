@@ -33,7 +33,6 @@ public class LambdaTest4 {
 
 }
 
-
 interface PersonCreater{
     Person getPerson();
 }
