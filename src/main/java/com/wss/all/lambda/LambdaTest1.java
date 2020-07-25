@@ -19,7 +19,7 @@ public class LambdaTest1 {
          */
 
         LambdaNoneReturnSingleParameter lambda2 = (int i) -> {
-            System.out.println("lambda2:" + (i+1));
+            System.out.println("lambda2:" + (i + 1));
         };
         lambda2.test(1024);
 

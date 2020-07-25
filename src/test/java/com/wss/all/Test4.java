@@ -19,17 +19,17 @@ import static org.mockito.Mockito.when;
 @SpringBootTest
 public class Test4 {
 
-//    @MockBean
+    //    @MockBean
     @SpyBean    //没有mock的值的时候，直接使用原来的对象
-    Service service;
+            Service service;
 
     @Test
     void t1() {
-        when(service.add(1,1)).thenReturn(3);
+        when(service.add(1, 1)).thenReturn(3);
 //        when(service.jian(3,1)).thenReturn(3);
         int add = service.add(1, 1);
         int jian = service.jian(3, 1);
-        Assertions.assertEquals(3,add);
-        Assertions.assertEquals(2,jian);
+        Assertions.assertEquals(3, add);
+        Assertions.assertEquals(2, jian);
     }
 }

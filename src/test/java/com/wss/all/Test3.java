@@ -19,9 +19,9 @@ public class Test3 {
     Service service;
 
     @Test
-    public void t1(){
+    public void t1() {
         int add = service.add(1, 2);
-        Assertions.assertEquals(3,add);
+        Assertions.assertEquals(3, add);
     }
 
 }
