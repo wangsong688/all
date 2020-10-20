@@ -5,5 +5,8 @@ public class T1 {
         byte a = 12;
         byte b = 15;
         System.out.println("a+b = " + a + b);
+        String strA = "";
+        System.gc();
+
     }
 }

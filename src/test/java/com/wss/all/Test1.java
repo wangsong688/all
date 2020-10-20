@@ -3,7 +3,7 @@ package com.wss.all;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class Test1 {
+public class Test1{
     @Test
     void function1() {
         int a = 1 + 1;
