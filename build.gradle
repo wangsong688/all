@@ -2,6 +2,7 @@ plugins {
     id 'org.springframework.boot' version '2.2.4.RELEASE'
     id 'io.spring.dependency-management' version '1.0.9.RELEASE'
     id 'java'
+    id 'war'
 }
 
 group = 'com.wss'
@@ -21,11 +22,15 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+    compile group: 'io.projectreactor', name: 'reactor-core', version: '3.4.0'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.3.5.RELEASE'
+
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
+
 }
 
 test {
